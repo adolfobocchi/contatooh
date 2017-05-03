@@ -1,4 +1,4 @@
-/* 
+verbose:true/* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -53,10 +53,10 @@ module.exports = function() {
     Um ponto importante é que precisamos carregar as pastas seguindo a ordem
     models, controllers e routes
      */
-    load('models', {cwd: 'app', verbose: true})
-        .then('controllers')
-        .then('routes/auth.js')
-        .then('routes')
+    load('./app/models', {cwd: './app', verbose: true})
+        .then('./app/controllers')
+        .then('./app/routes/auth.js')
+        .then('./app/routes')
         .into(app);
     
    /*
