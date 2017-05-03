@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="contatooh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contatooh</title>
+        <!-- build:css css/index.min.css -->
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css">
+        <!-- endbuild -->
+    </head>
+    <!--<body ng-controller="ContatosController"> usando sem angular-route -->
+    <body class="container">
+        <%if (usuarioLogado.length > 0) { %>
+        <div class="text-right"> 
+            <p>
+                Logado como: <span id="usuario-logado"><%=usuarioLogado %><span>
+                <a href="/logout">Logout</a>
+            </p>  
+        </div>
+        <% } %>
+        <div ng-view> <!-- usando angular route ou <ng-view></ng-view> --></div>
+        <!-- build:js js/index.min.js -->
+        <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-route/angular-route.js"></script>
+        <script src="vendor/angular-resource/angular-resource.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/services/ContatoService.js"></script>
+        <script src="js/services/InterceptorService.js"></script>
+        <script src="js/controllers/ContatosController.js"></script>
+        <script src="js/controllers/ContatoController.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
+
