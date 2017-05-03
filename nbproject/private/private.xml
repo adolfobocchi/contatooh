@@ -4,8 +4,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/app/views/index.ejs</file>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/app/views/404.ejs</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/config/protractor.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/config/passport.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/config/config.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/.travis.yml</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/README.md</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/.gitignore</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/app/config/env/test.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/app/config/env/development.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/server.js</file>
         </group>
     </open-files>
 </project-private>
