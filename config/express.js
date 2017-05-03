@@ -53,10 +53,10 @@ module.exports = function() {
     Um ponto importante é que precisamos carregar as pastas seguindo a ordem
     models, controllers e routes
      */
-    load('./app/models', {cwd: './app'})
-        .then('./app/controllers')
-        .then('./app/routes/auth.js')
-        .then('./app/routes')
+    load('models', {cwd: 'app', verbose:true})
+        .then('controllers')
+        .then('routes/auth.js')
+        .then('routes')
         .into(app);
     
    /*
