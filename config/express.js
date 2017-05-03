@@ -53,17 +53,19 @@ module.exports = function() {
     Um ponto importante é que precisamos carregar as pastas seguindo a ordem
     models, controllers e routes
      */
-    /*load('./app/models', {cwd: './app'})
+    load('./app/models', {cwd: './app'})
         .then('./app/controllers')
         .then('./app/routes/auth.js')
         .then('./app/routes')
         .into(app);
-    */
+    
+   /*
    load('models', {cwd: 'app'})
         .then('controllers')
         .then('routes/auth.js')
         .then('routes')
         .into(app);
+        */
     // se nenhum rota atender, direciona para página 404
     app.get('*', function(req, res) {
         res.status(404).render('404');
