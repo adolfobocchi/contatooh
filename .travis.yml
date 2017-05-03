@@ -22,6 +22,10 @@ before_script:
   - grunt
   - cd dist
 script:
+<<<<<<< HEAD
  - karma start config/karma.config.js --single-run --browsers PhantomJS
  - node server &
  - protractor config/protractor.js
+=======
+ - node server 
+>>>>>>> origin/master
