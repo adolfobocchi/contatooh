@@ -8,7 +8,8 @@
 // config/express.js
 var express = require('express');
 //var home = require('../app/routes/homeRoute'); sem usar express-load para carregar rotas mvc
-var load = require('express-load');var bodyParser = require('body-parser');
+var load = require('express-load');
+var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var passport = require('passport');
@@ -52,20 +53,6 @@ module.exports = function() {
     /*usando a configuracao express-load
     Um ponto importante é que precisamos carregar as pastas seguindo a ordem
     models, controllers e routes
-<<<<<<< HEAD
-     */
-    load('models', {cwd: 'app', verbose:true})
-        .then('controllers')
-        .then('routes/auth.js')
-        .then('routes')
-=======
-     *//*
-    load('./app/models', {cwd: './app', verbose: true})
-        .then('./app/controllers')
-        .then('./app/routes/auth.js')
-        .then('./app/routes')
->>>>>>> origin/master
-        .into(app);
     */
    
    load('models', {cwd: 'app', verbose:true})
