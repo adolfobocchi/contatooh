@@ -1,3 +1,4 @@
+
 {
   "name": "Contatooh",
   "version": "1.0.0",
@@ -22,8 +23,8 @@
     "karma-cli": "0.1.0",
     "method-override": "2.1.0",
     "mongo-sanitize": "^1.0.0",
-    "mongodb": "2.2.26",
-    "mongoose": "4.9.6",
+    "mongodb": "^1.4.28",
+    "mongoose": "^3.8.21",
     "mongoose-findorcreate": "^0.1.2",
     "passport": "0.3.2",
     "passport-github": "1.1.0",
