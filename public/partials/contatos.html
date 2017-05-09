@@ -26,7 +26,7 @@ and open the template in the editor.
 </p>
 
 <input type="search" placeholder="parte do nome" ng-model="filtro" >
-
+<div data-meu-painel titulo="Listagem de contatos">
 <div class="table-responsive">
     <table class="table table-hover">
         <tr>
@@ -42,10 +42,10 @@ and open the template in the editor.
             <td>{{contato.email}}</td>
             <td>{{contato.emergencia.nome}}</td>
             <td class="text-center">
-                <button ng-click="remove(contato)" class="btn btn-warning">
-                    Remover
-                </button>
+                <meu-botao-aviso nome="Remover" acao="remove(contato)">
+                </meu-botao-aviso>
             </td>
         </tr>
     </table>
 </div>
+    </div>

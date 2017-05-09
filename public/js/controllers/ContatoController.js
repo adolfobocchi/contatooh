@@ -38,6 +38,8 @@ angular.module('contatooh').controller('ContatoController',
                             texto : 'salvo com sucesso'
                         };
                         $scope.contato = new Contato();
+                        //$scope.btnBackFocus = true;
+                        $scope.$broadcast('contatoSalvo');
                     })
                     .catch(function(erro) {
                            $scope.mensagem = {

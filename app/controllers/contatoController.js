@@ -68,7 +68,7 @@ module.exports = function(app) {
                         function(erro) {
                             console.error(erro);
                             res.status(500).json(erro);
-                        }
+                        } 
                     );
         } else {
             Contato.create(req.body)
@@ -82,6 +82,8 @@ module.exports = function(app) {
                         }
                     );
         }
+        
+        
     };
     
     return controller;

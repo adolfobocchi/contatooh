@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 //usando rota passport pelo lado do cliente com httpProvider e interceptor
-angular.module('contatooh',['ngRoute', 'ngResource']) //objeto angular disponivel globalmente no projeto, [] array com as dependecias
+angular.module('contatooh',['ngRoute', 'ngResource', 'meusComponentes']) //objeto angular disponivel globalmente no projeto, [] array com as dependecias
         .config(
             function ($routeProvider, $httpProvider) {
                 
