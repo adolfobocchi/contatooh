@@ -1,0 +1,56 @@
+ <div class="page-header">
+     <h1>Pesquisa</h1>
+ </div>
+<div class="well well-lg">
+    <strong>Pergunta</strong><br>{{pesquisa.pergunta}}
+</div>
+<div ng-hide="pesquisa.userVotou">
+    <p class="lead">Por favor, selecione uma das seguintes opções.</p>
+    <form role="form" ng-submit="votar()">
+        <div ng-repeat="escolha in pesquisa.escolhas" class="radio">
+            <label>
+                <input type="radio" name="escolha" ng-model="pesquisa.userVoto" value="{{escolha._id}}">
+                    {{escolha.texto}}
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <a ng-href="#/pesquisas" class="btn btn-default" role="button">
+                    <span class="glyphicon glyphicon-arrow-left"></span> 
+                        voltar para lista de Pesquisa
+                </a>
+            </div>
+            <div class="col-xs-6">
+              <button class="btn btn-primary pull-right" type="submit">
+                Vote
+              </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div ng-show="pesquisa.userVotou">
+    <table class="result-table">
+        <tbody>
+            <tr ng-repeat="escolha in pesquisa.escolhas">
+                <td>{{escolha.texto}}</td>
+                <td>
+                    <table style="width: {{escolha.voto.length/pesquisa.totalVotos*100}}%;">
+                        <tr><td>{{escolha.voto.length}}</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>  
+    <p><em>{{pesquisa.totalVotos}}Votos contados até agora. 
+            <span ng-show="pesquisa.userEscolha">
+                Voce votou em 
+                <strong>{{pesquisa.userEscolha.texto}}</strong>.
+            </span>
+        </em>
+    </p>
+    <p><a ng-href="#/pesquisas" class="btn btn-default" role="button">
+            <span class="glyphicon glyphicon-arrow-left"></span> 
+            Voltar para lista de pesquisa
+        </a>
+    </p>
+</div>

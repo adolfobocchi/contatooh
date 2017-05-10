@@ -12,8 +12,7 @@ angular.module('contatooh').controller('ContatosController',
         
         $scope.mensagem = {texto: ''};
         
-        
-        function buscaContatos() {
+        function buscaContatos() {  
             Contato.query(
                 function(contatos) {
                     $scope.contatos = contatos;

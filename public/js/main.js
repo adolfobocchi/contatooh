@@ -25,11 +25,26 @@ angular.module('contatooh',['ngRoute', 'ngResource', 'meusComponentes']) //objet
                     templateUrl : 'partials/contato.html',
                     controller: 'ContatoController'
                 });
-                
+                                
                 $routeProvider.when('/auth', {
 
                     templateUrl: 'partials/auth.html'
 
+                });
+                
+                $routeProvider.when('/pesquisas', {
+                    templateUrl: 'partials/pesquisas.html', 
+                    controller: 'PesquisaController'
+                });
+                
+                $routeProvider.when('/pesquisa/:pesquisaId', { 
+                    templateUrl: 'partials/item.html', 
+                    controller: 'PesquisaController' 
+                });
+                
+                $routeProvider.when('/pesquisa', { 
+                    templateUrl: 'partials/new.html', 
+                    controller: 'PesquisaController'
                 });
                 
                 $routeProvider.otherwise({redirectTo: '/contatos'});

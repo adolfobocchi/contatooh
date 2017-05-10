@@ -14,6 +14,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var passport = require('passport');
 var helmet = require('helmet');
+var io = require('socket.io');
 
 module.exports = function() {
     var app = express();
@@ -60,7 +61,8 @@ module.exports = function() {
         .then('routes/auth.js')
         .then('routes')
         .into(app);
-        
+
+   
     // se nenhum rota atender, direciona para página 404
     app.get('*', function(req, res) {
         res.status(404).render('404');

@@ -1,0 +1,37 @@
+<div class="page-header">
+    <h1>Lista de Pesquisa</h1>
+</div>
+<p ng-show="mensagem.texto">
+    {{mensagem.texto}}
+</p>
+<div class="row">
+    <div class="col-xs-5">
+        <a ng-href="#/pesquisa" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> 
+            Nova Pesquisa
+        </a>
+    </div>
+    <div class="col-xs-7">
+        <input type="text" class="form-control" ng-model="filtro" placeholder="Pesquisar uma enquete">
+    </div>
+</div>
+<p ng-show="pesquisas.length">
+    Pesquisas cadastradas: {{pesquisas.length}}
+</p>
+<p class="text-info" ng-hide="pesquisas.length">
+    
+</p>
+<div class="row">
+    <div class="col-xs-12">
+        <hr>
+    </div>
+</div>
+<div class="row" ng-switch on="pesquisas.length">
+    <ul ng-switch-when="0">
+        <li><em>Nenhuma pesquisa no banco de dados. Você gostaria de <a ng-href="#/pesquisa">criar uma</a>?</li>
+    </ul>
+    <ul ng-switch-default>
+        <li ng-repeat="pesquisa in pesquisas | filter: {pergunta: filtro}">
+            <a ng-href="#/pesquisa/{{pesquisa._id}}">{{pesquisa.pergunta}}</a>
+        </li>
+    </ul>
+</div>

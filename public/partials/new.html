@@ -1,0 +1,39 @@
+<div class="page-header">
+    <h1>Nova Pesquisa</h1>
+</div>
+<p ng-show="mensagem.texto">
+    {{mensagem.texto}}
+</p>
+<form role="form" ng-submit="criarPesquisa()">
+    <div class="form-group">
+        <label for="pergunta">Pergunta</label>
+        <input type="text" ng-model="novapesquisa.pergunta" class="form-control" 
+               id="pesquisaPergunta" placeholder="Enter pesquisa pergunta">
+    </div>
+    <div class="form-group">
+        <label>Escolhas</label>
+        <div ng-repeat="escolha in novapesquisa.escolhas">
+            <input type="text" ng-model="escolha.texto" class="form-control" placeholder="escolha {{$index+1}}"><br>
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-default" ng-click="addEscolha()"><span class="glyphicon glyphicon-plus">
+            </span>Adicionar outro</button>
+        </div>
+    </div>
+    <p><hr></p>
+    <div class="row">
+        <div class="col-xs-6">
+            <a href="#/pesquisas" class="btn btn-default" role="button">
+            <span class="glyphicon glyphicon-arrow-left"></span> 
+                Voltar para lista de Pesquisa
+            </a>
+        </div>
+        <div class="col-xs-6">
+            <button class="btn btn-primary pull-right" type="submit">
+                Criar Pesquisa?
+            </button>
+        </div>
+    </div>
+</form>

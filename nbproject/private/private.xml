@@ -4,12 +4,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/test/spec/ContatoControllerSpec.js</file>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/public/js/directives/meus-componentes.js</file>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/public/partials/contato.html</file>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/test/spec/meusComponentesSpec.js</file>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/public/js/controllers/ContatoController.js</file>
-            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/config/karma.config.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/public/js/controllers/PesquisaController.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/public/partials/item.html</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/app/models/Pesquisa.js</file>
+            <file>file:/C:/Users/jsado_000/Documents/NetBeansProjects/Contatooh/server.js</file>
         </group>
     </open-files>
 </project-private>
