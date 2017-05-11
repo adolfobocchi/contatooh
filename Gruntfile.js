@@ -30,6 +30,7 @@ module.exports = function (grunt) {
                 },
                 html: 'dist/app/views/**/*.ejs'
         },
+        
             ngAnnotate: {
                 scripts: {
                     expand: true,
